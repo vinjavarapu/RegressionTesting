@@ -1,11 +1,11 @@
 import requests
 import pytest
 
-url = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=1990-10-30&unit=week"
+url = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=1974-04-10&unit=day"
 url_emptyarguments = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=&unit="
-url_wronginput = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=19740410&unit=week"
+url_wronginput = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=19740410&unit=day"
 url_onlyyearinput = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=1974-04-10"
-url_onlyunitinput = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=&unit=week"
+url_onlyunitinput = "https://lx8ssktxx9.execute-api.eu-west-1.amazonaws.com/Prod/next-birthday?dateofbirth=&unit=day"
 
 def test_can_call_apiendpoint():
     response = requests.request("GET", url)
