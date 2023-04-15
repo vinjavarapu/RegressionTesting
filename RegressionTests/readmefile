@@ -5,3 +5,4 @@ Go to project --> Testassignment
 Select the folder RegressionTests
 Right click and Run python tests
 you can see test results file in Test Results.html
+In order to run the entire test suite on command line, just pytest RegressionTests
