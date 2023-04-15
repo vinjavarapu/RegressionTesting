@@ -1,0 +1,7 @@
+Created the python api calls testing using requests library and pytest framework
+In order to run the application
+load the project in any editor
+Go to project --> Testassignment
+Select the folder RegressionTests
+Right click and Run python tests
+you can see test results file in Test Results.html
